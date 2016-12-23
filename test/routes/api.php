@@ -11,8 +11,9 @@ use Illuminate\Http\Request;
 | routes are loaded by the RouteServiceProvider within a group which
 | is assigned the "api" middleware group. Enjoy building your API!
 |
+Novedades laravel 5.2
 */
 
 Route::get('/user', function (Request $request) {
-    return $request->user();
+    return $request->user()->name." ".$request->user()->email;
 })->middleware('auth:api');
