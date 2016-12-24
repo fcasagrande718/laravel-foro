@@ -68,7 +68,7 @@ return [
             'database' => env('DB_DATABASE_TEST', 'forge'),
             //'username' => env('DB_USERNAME', 'forge'),
             //'password' => env('DB_PASSWORD', ''),
-            'username' => env('MYSQL_USERNAME', 'forge'),
+            'username' => env('MYSQL_USER', 'forge'),
             'password' => env('MYSQL_PASSWORD', ''),
 
             'charset' => 'utf8',
