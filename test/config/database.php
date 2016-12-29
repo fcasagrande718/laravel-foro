@@ -60,7 +60,7 @@ return [
             'strict' => true,
             'engine' => null,
         ],
-
+// Hola;
         'mysql_test' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', 'localhost'),
