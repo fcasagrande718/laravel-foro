@@ -2,18 +2,12 @@
 
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use App\User;
 
-class ExampleTest extends TestCase
+class test_basic_example extends FeatureTestCase
 {
-  use DatabaseTransactions;
-    /**
-     * A basic functional test example.
-     *
-     * @return void
-     */
-    public function testBasicExample()
+
+    function testBasicExample()
     {
       $user = factory(App\User::class)->create([
         'name' => 'faq faq',
